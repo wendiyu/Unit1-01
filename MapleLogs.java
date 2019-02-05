@@ -15,7 +15,7 @@ public class MapleLogs {
                
                 // properties
 
-                int truckCapacity;
+                int truckStorage;
                 int regLengthLogs;
                 double logMass;
                 double logNumber;
@@ -29,14 +29,23 @@ public class MapleLogs {
                 quarterLengthLogs = 0.25;
 
                 System.out.print("Please, Enter log size (options: 0.25, 0.5, 1): ");
-
+                
                 logsSize = userInput.nextDouble();
                 
-                logMass = logsSize * 20;
+                // Test the input whether valid
+                
+        		if (logsSize != 0.25 && logsSize != 0.5 && logsSize != 1) {
+        			System.out.println(" Invalid input! You can only choose numbers in the bracket. ");
+        		}
+        		else {
+        			
+        			logMass = logsSize * 20;
 
-                logNumber = truckCapacity/logMass;
+                    logNumber = truckStorage/logMass;
 
-                System.out.print("The truck can carry " + logNumber + " logs of " + logsSize + "m.\n");
+                    System.out.print("The truck can carry " + logNumber + " logs of " + logsSize + "m.\n");
+        		}
+        		
 
         }
 
