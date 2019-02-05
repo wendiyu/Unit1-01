@@ -23,7 +23,7 @@ public class MapleLogs {
                 double quarterLengthLogs;
                 double logsSize;
 
-                truckCapacity = 1100;
+                truckStorage = 1100;
                 regLengthLogs = 1;
                 halfLengthLogs = 0.5;
                 quarterLengthLogs = 0.25;
