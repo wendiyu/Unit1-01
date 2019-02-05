@@ -24,9 +24,6 @@ public class MapleLogs {
                 double logsSize;
 
                 truckStorage = 1100;
-                regLengthLogs = 1;
-                halfLengthLogs = 0.5;
-                quarterLengthLogs = 0.25;
 
                 System.out.print("Please, Enter log size (options: 0.25, 0.5, 1): ");
                 
